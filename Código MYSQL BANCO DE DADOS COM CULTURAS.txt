@@ -1,0 +1,114 @@
+DROP DATABASE IF EXISTS `Culturas`;
+CREATE DATABASE `Culturas`;
+USE `Culturas`;
+
+CREATE TABLE culturas_e_infos (
+	cultura_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    cultura_titulo TEXT,
+    cultura_descricao TEXT,
+    cultura_mapaCultural TEXT,
+    cultura_imagem TEXT, 
+    cultura_fonteConfiavel TEXT,
+    cultura_religiao TEXT,
+    cultura_crenca TEXT,
+    cultura_idioma TEXT,
+    cultura_pais TEXT
+);	
+
+
+INSERT INTO culturas_e_infos (cultura_titulo, cultura_descricao, cultura_mapaCultural, cultura_imagem, cultura_fonteConfiavel, cultura_religiao, cultura_crenca, cultura_idioma, cultura_pais ) VALUES
+('Cultura Indígena', 'Os povos indígenas do Brasil são extremamente diversos, com mais de 300 etnias diferentes e cerca de 274 línguas faladas. Cada grupo possui suas próprias tradições, mitologias, e formas de organização social.', 
+'https://i.pinimg.com/1200x/07/12/fa/0712faa4c72c1a7ac3f1e7413ee88e88.jpg', 
+'https://th.bing.com/th/id/OIP.y0J4iUKZUufKd5c9EKMndAHaE8?w=1080&h=720&rs=1&pid=ImgDetMain', 
+'https://www.socioambiental.org/', 
+'Os pajés ou xamãs são os líderes espirituais das comunidades indígenas. Eles são responsáveis por conduzir rituais, curar doenças e se comunicar com os espíritos', 
+'A crença da maioria das religiões indígenas está profundamente conectada à natureza.',
+'Os idiomas mais famosos da cultura são: tupi e o macro-jê',
+'BR'),
+
+('Cultura Africana', 'A cultura africana no Brasil é resultado da influência dos milhões de africanos trazidos ao país durante o período da escravidão. Essa herança é visível em muitos aspectos da vida brasileira.', 
+'https://imagenes.serpadres.es/files/vertical_image_670/uploads/2024/04/10/661680cc47391.jpeg', 
+'https://i0.wp.com/www.momoafrica.com/wp-content/uploads/2019/08/Culture.jpg?ssl=1',
+'https://brasilescola.uol.com.br/cultura/cultura-africana.htm',
+'O candomblé e a umbanda são religiões afro-brasileiras que combinam elementos de várias tradições africanas com o catolicismo e o espiritismo.',
+'As principais crenças do Candomblé são: Orixás, Ancestralidade, Rituais e oferendas. As principais crenças da Umbanda são: Sincretismo, Orixás, Guias Espirituais, Caridade e Fraternidade',
+'Principais Língua são a Iorubá que é utilizada nos rituais do Candomblé e o Português',
+'BR'),
+
+('Cultura Japonesa', 'A cultura do Japão evoluiu grandemente com o tempo, da cultura do país original Jomon para sua cultura híbrida contemporânea, que combina influências do Brasil, Europa e América do Norte.', 
+'https://th.bing.com/th/id/OIP.1dYoKJl3XaZJn7epkAU7lwHaHa?w=1200&h=1200&rs=1&pid=ImgDetMain',
+'https://th.bing.com/th/id/R.521bcaece0a244435dab316dbce83c21?rik=wdh3C%2bIV%2bh6yZQ&riu=http%3a%2f%2fwww.citypictures.net%2fdata%2fmedia%2f231%2fKamogawa_Odori_Kyoto_Japan.jpg&ehk=7QVfRajbJYImhfOjOg0HGBdbCA7bvGqZBXZ18aD%2flCM%3d&risl=&pid=ImgRaw&r=0',
+'https://pt.wikipedia.org/wiki/Cultura_do_Jap%C3%A3o',
+'As principais religiões no Japão são o Xintoísmo e o Budismo.',
+'A crença no Japão é marcada pelo sincretismo religioso, onde o Xintoísmo e o Budismo são as religiões predominantes.',
+'O idioma oficial do Japão é o Japonês.',
+'JP'),
+
+('Cultura Hindu', 'A cultura hindu é profundamente influenciada pelo Hinduísmo, que molda a forma de pensar, de se relacionar e de viver dos seus praticantes. A sociedade hindu é tradicionalmente dividida em castas, um sistema que organiza a sociedade em diferentes grupos sociais.',
+'https://th.bing.com/th/id/R.5742b2e6114d7d015d0f68a310523a03?rik=6yu6Py6tpmqOVg&pid=ImgRaw&r=0',
+'https://i.ytimg.com/vi/2fajip-uToM/maxresdefault.jpg',
+'https://www.significados.com.br/hinduismo/',
+'O Hinduísmo é a religião predominante na Índia e uma das mais antigas do mundo',
+'Há uma ampla variedade de crenças e práticas dentro dela. Algumas crenças comuns incluem: Karma, Samsara, Moksha, Deidades',
+'O idioma associado à cultura hindu é o Hindi.',
+'IND'),
+
+('Cultura Maia', 'Os maias eram mestres em várias áreas, incluindo arquitetura, astronomia e matemática. Eles construíram cidades-estado independentes com templos piramidais, palácios e observatórios astronômicos. ',
+'https://astrologicalworldmap.com/wp-content/uploads/2018/02/Maya-culture-map.jpg',
+load_file('C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\CulturaMaia.jpg',
+'https://www.worldhistory.org/trans/pt/2-802/a-alimentacao-e-agricultura-dos-maias/',
+'A religião maia era politeísta, com uma vasta panteão de deuses relacionados à natureza, como Itzamná (deus do céu), Ix Chel (deusa da lua e da fertilidade) e Chac (deus da chuva)',
+'Os maias tinham uma visão de mundo profundamente espiritual e cíclica. Eles acreditavam que o universo passava por ciclos de criação e destruição. ',
+'Os maias falavam várias línguas pertencentes à família linguística maia. Entre as mais conhecidas estão o Quiché, o Iucateque e o Mam.',
+'MEX'),
+
+('Cultura Faraônica', 'A cultura faraônica do Egito Antigo é uma das mais fascinantes e duradouras civilizações da história, com uma rica herança cultural que influenciou muitas outras culturas ao longo dos séculos.',
+'https://th.bing.com/th/id/OIP.xhl8xklHaWfJvdd01OWxCQHaKo?w=642&h=922&rs=1&pid=ImgDetMain',
+'https://th.bing.com/th/id/OIP.Y4IhFFQAPgczNFNwNEtwNwHaEK?w=1280&h=720&rs=1&pid=ImgDetMain',
+'https://mundoeducacao.uol.com.br/historiageral/farao.htm',
+'A religião egípcia era politeísta, com uma vasta panteão de deuses e deusas. Alguns dos mais importantes incluem: Rá, Osíris, Ísis e Hórus.',
+'Os egípcios antigos tinham uma visão de mundo profundamente espiritual e religiosa. Eles acreditavam em uma vasta panteão de deuses e deusas, cada um responsável por diferentes aspectos da vida e da natureza.',
+'O idioma principal do Egito Antigo era o Egípcio',
+'EGY'),
+
+('Cultura Eslava', 'A cultura eslava é marcada por uma forte conexão com a natureza e uma rica tradição folclórica. As danças tradicionais, como o Hopak na Ucrânia, e os trajes ricamente bordados são características distintivas.',
+'https://th.bing.com/th/id/OIP.vJY0XwMVQNCtdV_SeTc96wHaHB?w=610&h=579&rs=1&pid=ImgDetMain',
+'https://th.bing.com/th/id/OIP.yczFPHyAYke9Is6LzHa9QgHaE8?w=750&h=500&rs=1&pid=ImgDetMain',
+'https://www.todamateria.com.br/povos-eslavos/',
+'Com a chegada do cristianismo, a maioria dos eslavos se converteu ao cristianismo ortodoxo ou ao catolicismo romano.',
+'Os eslavos antigos praticavam o paganismo eslavo, uma religião politeísta com uma rica mitologia. Alguns dos principais deuses incluem: Perun, Dazhbog, Mokosh e Veles.',
+'As línguas eslavas pertencem à família linguística indo-europeia e são divididas em três grupos principais: Eslavo Oriental, Eslavo Ocidental, Eslavo Meridional',
+'RUS'),
+
+('Cultura Aborígene', 'Os aborígenes australianos são conhecidos por sua rica tradição oral, arte, música e dança. A arte aborígene é uma das mais antigas do mundo, caracterizada por pinturas rupestres, desenhos simbólicos e padrões geométricos que retratam histórias do Dreamtime e a conexão com a terra.',
+'https://libapps-au.s3-ap-southeast-2.amazonaws.com/accounts/77716/images/file-13.jpg',
+'https://th.bing.com/th/id/R.12064dc896668fe22b8b87f5c3b89a10?rik=q3lLwpSYR%2fWR0g&riu=http%3a%2f%2fp4.storage.canalblog.com%2f49%2f51%2f1302428%2f105137790_o.jpg&ehk=fMtwXEexwg2Ygh89xJ5QAZQUfKHmU97%2bA6KdYlVPMeQ%3d&risl=&pid=ImgRaw&r=0',
+'https://www.infoescola.com/antropologia/aborigenes/',
+'A religião aborígene é animista, acreditando que todos os elementos da natureza possuem uma essência espiritual.',
+'Os aborígenes australianos têm uma visão de mundo profundamente espiritual, centrada no conceito de Dreamtime ou Tempo dos Sonhos.',
+'Existem cerca de 250 idiomas aborígenes distintos, embora muitos estejam em risco de extinção. Muitos aborigenes também falam inglês.',
+'AUS'),
+
+('Cultura Renascentista', 'A cultura renascentista, que floresceu na Europa entre os séculos XIV e XVII, marcou uma transição significativa da Idade Média para a Idade Moderna. Este período foi caracterizado por um renascimento das artes, da ciência e do pensamento humanista, inspirado na Antiguidade Clássica.', 
+'https://files.passeidireto.com/6fba2c73-2b97-4cd8-b855-86d3fd4c1ff8/6fba2c73-2b97-4cd8-b855-86d3fd4c1ff8.jpeg',
+'https://th.bing.com/th/id/OIP.SKtAw_5ByR2XIC1rnIicAgHaE4?w=1198&h=790&rs=1&pid=ImgDetMain',
+'https://www.todamateria.com.br/renascimento-caracteristicas-e-contexto-historico/',
+'Embora o Renascimento tenha promovido uma visão mais secular do mundo, a religião ainda desempenhava um papel importante. A Igreja Católica continuou a ser uma força dominante, mas o período também viu o início da Reforma Protestante, que desafiou a autoridade da Igreja e levou à criação de novas denominações cristãs.',
+'O Renascimento trouxe uma mudança de paradigma do teocentrismo medieval (Deus como centro do universo) para o antropocentrismo (o homem como centro do universo. ',
+'Durante o Renascimento, o latim continuou a ser a língua erudita e acadêmica, mas houve um aumento significativo no uso das línguas vernáculas, como o italiano, francês, espanhol e inglês.',
+'ITA');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
